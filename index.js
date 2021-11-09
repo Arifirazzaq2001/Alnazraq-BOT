@@ -2,7 +2,7 @@ let { create, Client } = require('@open-wa/wa-automate');
 let msgHandler = require('./main.js');
 let fs = require('fs');
 
-const options = () => {
+function options() {
   const options = {
     sessionId: "session",
     authTimeout: 60,
