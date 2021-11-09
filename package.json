@@ -1,0 +1,45 @@
+{
+  "name": "Alnazraq-BOT",
+  "version": "0.0.1",
+  "description": "No comment",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arifi Razzaq & Nazwa",
+  "license": "",
+  "dependencies": {
+    "@open-wa/wa-automate": "^4.23.6",
+    "@open-wa/wa-decrypt": "^4.3.1",
+    "axios": "^0.24.0",
+    "chalk": "^4.1.0",
+    "file-type": "^16.2.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "form-data": "^4.0.0",
+    "fs-extra": "^10.0.0",
+    "node-cron": "^3.0.0",
+    "node-fetch": "^3.0.0",
+    "moment-timezone": "^0.5.33"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arifirazzaq2001/Alnazraq-BOT.git"
+  },
+  "keywords": [
+    "Whatsapp-Bot",
+    "Arifirazzaq2001",
+    "moo-d",
+    "Bot",
+    "Bot-wa",
+    "Wa-bot",
+    "Bot-Whatsapp"
+  ],
+  "bugs": {
+    "url": "https://github.com/Arifirazzaq2001/Alnazraq-BOT/issues"
+  },
+  "homepage": "https://github.com/Arifirazzaq2001/Alnazraq-BOT#readme"
+}
