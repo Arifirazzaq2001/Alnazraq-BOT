@@ -1,3 +1,9 @@
+// > Module
+let fs = require('fs-extra');
+
+// > Json Files / [Database]
+let setting = JSON.parse(fs.readFileSync('./setting.json'));
+
 module.exports = msgHandler = async (master = new Client, message) => {
   try {
     let { id, from, sender, isGroupMsg, chat, caption, isMedia, mimetype, quotedMsg, quotedMsgObj, mentionedJidList } = message;
@@ -8,9 +14,11 @@ module.exports = msgHandler = async (master = new Client, message) => {
     let cmd = caption || body || '';
     let command = cmd.toLowerCase().split(' ')[0] || '';
     let args = cmd.split(' ');
-    
-    var prefix = /^[°•π÷×¶∆£¢€¥®™✓=|~!#$%^&./\\©^]/.test(command) ? command.match(/^[°•π÷×¶∆£¢€¥®™✓=|~!#$%^&./\\©^]/gi) : '-'
-    
+    if (setting.multiprefix == true) {
+      var prefix = /^[°•π÷×¶∆£¢€¥®™✓=|~!#$%^&./\\©^]/.test(command) ? command.match(/^[°•π÷×¶∆£¢€¥®™✓=|~!#$%^&./\\©^]/gi) : '-'
+    } else {
+      prefix = 
+    }
   } catch (err) {
     console.error(color('[ERROR]', 'red'), err);
   }
