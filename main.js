@@ -1,6 +1,9 @@
 // > Module
 let fs = require('fs-extra');
 
+// > JS Files / [Function]
+let { msgs } = require('./lib/function');
+
 // > Json Files / [Database]
 let setting = JSON.parse(fs.readFileSync('./setting.json'));
 
