@@ -15,9 +15,9 @@ module.exports = msgHandler = async (master = new Client, message) => {
     let command = cmd.toLowerCase().split(' ')[0] || '';
     let args = cmd.split(' ');
     if (setting.multiprefix == true) {
-      var prefix = /^[°•π÷×¶∆£¢€¥®™✓=|~!#$%^&./\\©^]/.test(command) ? command.match(/^[°•π÷×¶∆£¢€¥®™✓=|~!#$%^&./\\©^]/gi) : '-'
+      var prefix = /^[°•π÷×¶∆£¢€¥®™✓=|~!#$%^&./\\©^]/.test(command) ? command.match(/^[°•π÷×¶∆£¢€¥®™✓=|~!#$%^&./\\©^]/gi) : '-';
     } else {
-      prefix = 
+      prefix = setting.prefix;
     }
   } catch (err) {
     console.error(color('[ERROR]', 'red'), err);
