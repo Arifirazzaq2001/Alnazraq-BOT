@@ -19,6 +19,7 @@ module.exports = msgHandler = async (master = new Client, message) => {
     } else {
       prefix = setting.prefix;
     }
+    ownerNumber = [setting.ownernumber + "@s.whatsapp.net"]
   } catch (err) {
     console.error(color('[ERROR]', 'red'), err);
   }
